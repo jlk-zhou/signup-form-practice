@@ -1,0 +1,42 @@
+body {
+    display: flex; 
+    margin: 0px; 
+    height: 100vh; 
+    box-sizing: border-box; 
+}
+
+/* Background image panel on the left, and its elements */
+.bg-left {
+    background-image: url('./img/fern.jpg');
+    background-size: cover; 
+}
+
+/* Logo bar containing image and styled text */
+.logo-bar {
+    background: rgba(0, 0, 0, 0.6); 
+    margin-top: 200px; 
+    height: 80px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    width: 40vw; 
+    padding: 10px; 
+}
+
+.logo-bar img {
+    max-height: 100%; 
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./font/Norse-Bold.otf);
+}
+
+.logo-bar h1 {
+    font-family: "Norse-Bold";
+    color: white; 
+    font-size: 4em;
+    height: 55px; 
+}
