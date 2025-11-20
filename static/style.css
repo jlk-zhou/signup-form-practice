@@ -40,3 +40,104 @@ body {
     font-size: 4em;
     height: 55px; 
 }
+
+/* Form section on the page's right */
+.form-section {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px; 
+    background-color: rgb(250, 250, 250);
+}
+
+/* The "This is not a real service" form intro */
+.form-description {
+    width: 630px; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    margin: 0px 40px; 
+}
+
+.form-field {
+    background-color: white; 
+    box-shadow: 0px 3px 10px rgb(200, 200, 200); 
+    padding: 5px 40px; 
+}
+
+.form-field h3 {
+    color: rgb(40, 40, 40)
+}
+
+.form-input {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-bottom: 30px; 
+}
+
+/* The divs of inputs, each contain a lable and a field */
+.input-item {
+    padding: 10px 0px; 
+    padding-right: 70px; 
+}
+
+label {
+    display: block; 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    font-weight: 600; 
+    color: rgb(79, 79, 79); 
+}
+
+input {
+    padding-left: 6px; 
+    width: 250px; 
+    height: 30px; 
+    border-radius: 4px;
+    border: 1px solid #E5E7EB; 
+}
+
+input:user-invalid {
+    border: 1px solid red; 
+}
+
+input:focus {
+    outline: none; 
+    border: 1px solid rgb(0, 85, 255); 
+    box-shadow: 3px 3px 5px rgb(215, 215, 215);
+}
+
+/* The "Create Account" Button */
+.submit button {
+    margin: 30px 40px 0px; 
+    width: 180px; 
+    height: 40px; 
+    border-radius: 8px;
+    border: none; 
+    background-color: #596D48;
+    color: white; 
+    font-weight: 600;
+}
+
+.submit button:hover {
+    cursor: pointer; 
+    box-shadow: 5px 3px 7px rgb(206, 206, 206);
+}
+
+.submit button:active {
+    box-shadow: 4px 2px 6px rgb(206, 206, 206)
+}
+
+/* The "Already have an account" message */
+.have-account {
+    margin: 0px 40px; 
+}
+
+.have-account a {
+    color: #596D48; 
+    text-decoration: none; 
+}
+
+.have-account a:hover {
+    text-decoration: underline;
+}

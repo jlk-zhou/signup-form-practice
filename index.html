@@ -25,34 +25,46 @@
             </p>
             <p>You <em>know</em> you want to. </p>
         </div>
-        <div class="form-body">
-            <form>
-                <div class="form-field">
-                    <h3>Let's do this! </h3>
+        <form class="form-body">
+            <div class="form-field">
+                <h3>Let's do this! </h3>
+                <div class="form-input">
+                    <div class="input-item">
                     <!-- First Name -->
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <!-- Last Name -->
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
-                    <!-- Email -->
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                    <!-- Phone number -->
-                    <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" id="tel" name="phone-number">
-                    <!-- Password -->
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
-                    <!-- Confirm Password -->
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="confirm" id="confirm">
+                    <label for="first-name">FIRST NAME*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="input-item">
+                        <!-- Last Name -->
+                        <label for="last-name">LAST NAME*</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="input-item">
+                        <!-- Email -->
+                        <label for="email">EMAIL*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-item">
+                        <!-- Phone number -->
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" pattern="^[0-9]+$" name="phone-number">
+                    </div>
+                    <div class="input-item">
+                        <!-- Password -->
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-item">
+                        <!-- Confirm Password -->
+                        <label for="confirm">CONFIRM PASSWORD*</label>
+                        <input type="password" id="confirm" required>
+                    </div>
                 </div>
-                <div class="submit">
-                    <button type="submit">Create Account</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="submit">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>        
         <div class="have-account">
             Already have an account? <a id="login" href="index.html">Log in</a>
         </div>
